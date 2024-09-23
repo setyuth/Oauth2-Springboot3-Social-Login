@@ -2,6 +2,5 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/social/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../Spring Boot 3 Keycloak Integration/keycloak/keycloak/src/main/java" charset="UTF-8" />
   </component>
 </project>
