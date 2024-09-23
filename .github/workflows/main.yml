@@ -23,9 +23,12 @@ jobs:
           java-version: 17
 
       - name: Unit Tests
-        run: mvn -B test --file social/pom.xml
+        run: |
+          pwd
+          mvn -B -X test --file social/pom.xml
 
       - name: Build the application
         run: |
+          pwd
           mvn clean
-          mvn -B package --file social/pom.xml
+          mvn -B -X package --file social/pom.xml
