@@ -26,7 +26,6 @@ jobs:
         run: mvn -B test --file social/pom.xml
 
       - name: Clean Build the application
-        working-directory: ./social
         run: |
           mvn clean install --file social/pom.xml
          #mvn -B package --file social/pom.xml
