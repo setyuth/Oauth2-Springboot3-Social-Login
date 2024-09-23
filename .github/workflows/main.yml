@@ -28,4 +28,4 @@ jobs:
       - name: Build the application
         run: |
           mvn clean
-          mvn -B package --file tree/master/social/pom.xml
+          mvn -B package --file /tree/master/social/pom.xml
