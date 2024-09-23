@@ -26,9 +26,10 @@ jobs:
         run: mvn -B test --file social/pom.xml
 
       - name: Clean Build the application
+        working-directory: ./social
         run: |
-          mvn clean --file social/pom.xml
-          mvn -B package --file social/pom.xml
+          mvn clean install --file social/pom.xml
+         #mvn -B package --file social/pom.xml
 
       - name: Build Docker Image
         uses: docker/build-push-action@v3
