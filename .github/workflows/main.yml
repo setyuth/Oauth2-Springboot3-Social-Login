@@ -25,4 +25,4 @@ jobs:
       - name: Build the application
         run: |
           mvn clean
-          mvn -f /home/runner/work/Oauth2-Springboot3-Social-Login/Oauth2-Springboot3-Social-Login/social/pom.xml -B package
+          mvn -B package --file social/pom.xml
