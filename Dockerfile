@@ -2,7 +2,7 @@ FROM openjdk:17-jdk
 
 WORKDIR /app
 
-COPY target/social-0.0.1-SNAPSHOT.jar /app/social.jar
+COPY social/target/social-0.0.1-SNAPSHOT.jar /app/social.jar
 
 EXPOSE 8080
 
