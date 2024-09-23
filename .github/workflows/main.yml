@@ -27,8 +27,10 @@ jobs:
           pwd
           mvn -B -X test --file social/pom.xml
 
+      - name: Clean the application
+        run: mvn clean
+
       - name: Build the application
         run: |
           pwd
-          mvn clean
           mvn -B -X package --file social/pom.xml
